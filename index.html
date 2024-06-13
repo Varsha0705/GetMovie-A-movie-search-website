@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Movie</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <h1>GET YOUR MOVIE!</h1>
+        <div class="row" style="justify-content: center;">
+            
+            <input type="number" min="0" max="10" step="0.1" id="r1" placeholder="min rating">
+            <input type="number" min="0" max="10" step="0.1" id="r2" placeholder="max rating">
+            <input type="search" id="search" autocomplete="off" placeholder="Search here..." />
+            
+            <input type="number" id="y1" min="1900" max="2100" step="1" placeholder="from year">
+            <input type="number" id="y2" min="1900" max="2100" step="1" placeholder="to year">
+            <button id="filterbtn">Find Movie</button>
+            <button id="clear">Clear Search</button>
+        </div>
+        <div id="bottom">
+            <button id="find">Get exact movie</button>
+            
+        </div>
+        
+        <div class="row" id="movie-box"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

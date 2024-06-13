@@ -1,0 +1,154 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+}
+
+.main {
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="number"] {
+    width: 100px;
+}
+
+#movie-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.box {
+    background-color: #fff;
+    width: 300px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.box:hover {
+    transform: translateY(-10px);
+}
+
+.box img {
+    width: auto;
+    height: 150px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.overlay {
+    padding: 20px;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#filterbtn,
+#find, #clear {
+    height: 35px;
+    margin-top: 7px;
+    margin-left: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+#filterbtn{
+    white-space: nowrap;
+}
+
+#filterbtn:hover,
+#find:hover, #clear:hover{
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1) ;
+}
+
+#find{
+    white-space: nowrap;
+    text-align: center;
+    margin-left: 40%;
+}
+
+#clear {
+    white-space: nowrap;
+    width: 100px;
+}
+
+input[type="checkbox"] {
+    width: 30px;
+}
+
+h1 {
+    align-self: center;
+    text-align: center;
+    font-size: 32px;
+}
+
+.overlay h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.overlay p {
+    margin: 10px 0 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.details {
+    display: none;
+    max-height: 4.5em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    transition: max-height 0.3s ease;
+    font-size: 14px;
+}
+
+.show-more {
+    background: none;
+    border: none;
+    color: #00f;
+    cursor: pointer;
+    padding: 0;
+    margin: 10px 0;
+    display: block;
+}
+
+.show-more:hover {
+    text-decoration: underline;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
